@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MY ANGULAR</title>
+<style>
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: right;
+  width: 180px;
+  
+}
+div.gallery:hover {
+  border: 1px solid rgba(245, 241, 10, 0.925);
+} 
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 20px;
+  text-align:center;
+  color:aqua;
+}
+h3{
+margin-left: 20px;
+display: inline-block;
+line-height: 80px;
+}
+*{
+padding: 0;
+margin: 0;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
+}
+body{
+font-family: Palatino Linotype;
+
+background-repeat: no-repeat;
+background-size:100% 100%;
+background-attachment: fixed;
+}
+.activities{
+font-size: 24px;
+margin: 20px;
+padding: 7px 13px;
+border-radius: 3px;
+font-weight: bold;
+}
+nav{
+background:aqua;
+height: 80px;
+}
+.banner-title{
+margin: 80px 130px;
+}
+h1{
+color: rgb(245, 252, 243);
+font-weight: bold;
+font-size: 64px;
+}
+span{
+color:lawngreen;
+}
+b{
+color:#0082e6;
+}
+
+li{
+color: whitesmoke
+}
+.banner-title h1{
+font-size: 64px;
+margin-bottom: 30px;
+}
+.banner-title h1 span{
+color: #0c131a;
+}
+label.logo{
+color: rgb(26, 22, 22);
+font-size: 35px;
+line-height: 100px;
+padding:0 100px;
+font-weight: bold;
+font-style: unset ;
+}
+
+nav ul{
+float: right;
+margin-right: 20px;
+}
+nav ul li{
+display: inline-block;
+line-height: 80 px;
+margin: 0 5px;
+}
+nav ul li a{
+color: lawngreen;
+font-size: 17px;
+padding: 7px 13px;
+border-radius: 3px;
+text-transform: uppercase;
+}
+a.active,a:hover{
+background: #f7f6f4;
+transition: .5s;
+}
+.checkbtn{
+font-size: 30px;
+color: white;
+float: right;
+line-height: 80px;
+margin-right: 40px;
+cursor: pointer;
+}
+#check{
+display: none;
+}
+@media (max-width:952px){
+label.logo{
+font-size: 30px;
+padding-left: 50px;
+}
+nav ul li a{
+font-size: 16px;
+}
+input{
+position: right;
+}
+</style>
+
+</head>
+
+<body background="1.png">
+<div class="gallery">
+  <a target="_blank" href="migui.JPG">
+    <img src="migui.JPG" alt="alapepai" width="600" height="400"><br>
+    <br>
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="2.jpg"><br>
+    <img src="2.jpg" alt="alapepai" width="600" height="400"><br>
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="3.jpg">
+    <img src="3.jpg" alt="alapepai" width="600" height="400"><br>
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+<br>
+<div class="gallery">
+  <a target="_blank" href="4.jpg">
+    <img src="4.jpg" alt="alapepai" width="600" height="400"><br>
+  </a>
+  <div class="desc">Add a description of the image here</div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<nav> 
+  
+  <label class="logo">PORTFOLIO</label> 
+
+<input type="checkbox"id="check">
+  <label for="check" class="checkbtn">
+  <i class="fasfa-bars"></i>
+
+<div class=”container”>
+<div class=”portfolio-container”>
+<img src=”FB.jpg”>
+<h1>MY NAME IS "<span>MIGUI<br> CERSE MACAMAY</span>"</h1>
+<div class=”details”>
+<li>Age: <b>EVSU</b> </li>
+<li>Gender: <b>EVSU</b> </li>
+<li>University: <b>EVSU</b> </li>
+</ul>
+
+
+</div>
+</div>
+
+ <ul>
+  <li><a class="active" href="#">Home</a>
+ </li>
+  <li><a href="#">About</a>
+ </li>
+  <li><a href="#">Work</a>
+ </li>
+  <li><a href="#">Contact</a>
+ </li>
+  <li><a href="#">Feedback</a>
+ </li>
+</ul>
+
+
+</nav>
+</body>
+</html>
